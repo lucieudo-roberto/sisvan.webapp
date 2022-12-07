@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sisvan-app by: lucieudo.roberto@gmail.com</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="tab-box">
+        <button onclick="page_fc.tab_change(0)" class="tab-bnt">formulário #1</button>
+        <button onclick="page_fc.tab_change(1,ls_f1())" class="tab-bnt">planilha #1</button>
+        <button onclick="page_fc.tab_change(2)" class="tab-bnt">formulário #2</button>
+        <button onclick="page_fc.tab_change(3)" class="tab-bnt">planilha #2</button>
+    </div>
+    
+    <div class="windows window-1">
+        <fieldset class="w1-box1">
+            <label>vila<input class="inp-txt" type="text" maxlength="13"></label>
+            <label>nome<input class="inp-txt" type="text" maxlength="39"></label>
+            <div class="w1-box1-grid3">
+                <label>data  <input class="inp-txt" type="date"></label>
+                <label>peso  <input class="inp-txt" type="number"></label>
+                <label>altura<input class="inp-txt" type="number"></label>
+            </div>
+            <select class="inp-txt">
+                 <option value="1">1: magro</option>
+                 <option value="2">2: ideal</option>
+                 <option value="3">3: acima</option>
+            </select>
+            <div class="w1-box1-grid3">
+                <label>vitamina A<input class="inp-txt" type="date"></label>
+                <label>sulfato FE<input class="inp-txt" type="number"></label>
+                <label>A.I.D.P.I <input class="inp-txt" type="number"></label>
+            </div>
+            <div class="w1-box1-grid2">
+                <label> masculino <input class="inp-chk" type="radio" name="ag"></label>
+                <label> feminino  <input type="radio" name="ag"></label>
+            </div>
+        </fieldset>
+        <fieldset class="w1-box2">
+            <fieldset class="w1-box2-grid2">
+                <label><input class="inp-chk" type="checkbox">bolsa família</label>
+                <label><input class="inp-chk" type="checkbox">cesta básica </label>
+                <label><input class="inp-chk" type="checkbox">leite N.humano</label>
+                <label><input class="inp-chk" type="checkbox">outros</label>
+                <label><input class="inp-chk" type="checkbox">não recebe</label>
+                <label><input class="inp-chk" type="checkbox">sem informação</label>
+            </fieldset>
+            <fieldset class="w1-box2-grid2">
+                <label><input class="inp-chk" type="checkbox">exclusivo</label>
+                <label><input class="inp-chk" type="checkbox">predominante</label>
+                <label><input class="inp-chk" type="checkbox">complementar</label>
+                <label><input class="inp-chk" type="checkbox">desmamado</label>
+                <label><input class="inp-chk" type="checkbox">sem informação</label>
+            </fieldset>
+        </fieldset>
+        <fieldset class="w1-box3">
+              <div class="w1-box3-grid2">
+                  <button onclick="save_data()">salvar</button>
+                  <button onclick="clea_form()">limpar</button>
+              </div>
+        </fieldset>
+    </div>
+     
+    <div class="windows window-2">
+        <div class="w2-box1"></div>
+        <a class="w2-box2" href="print.html" target="blank"></a>
+    </div>
+    <div class="windows window-3">w3</div>
+    <div class="windows window-4">w4</div>
+    
+
+    <script src="src/page.js"></script>
+    <script src="src/data.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
+
+
