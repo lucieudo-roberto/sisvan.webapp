@@ -1,3 +1,20 @@
+.popup {
+    top: -100px; left: 25%;
+    position: absolute;
+    display: block;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px 1px #818181;
+    transition: .5s;
+}
+.popup-text {
+    display: block;
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    font: 800 1rem/1 "MonoSpace";
+}
 
 .tab-box {
     display: grid;
@@ -69,7 +86,7 @@
     display: block;
     border: 1px solid #c0c0c0;
     width: 100%;
-    padding: 4% 1%;
+    padding: 6% 1%;
     font: 200 1rem/1 "MonoSpace";
     outline-color: #147ca0;
     text-align: center;
@@ -95,13 +112,14 @@
 
  .w1-box1-grid2 label input[type="radio"] {
     vertical-align: middle;
+    accent-color: #147ca0;
 }
  
  .w1-box1 select {
     display: block;
     border: 1px solid #c0c0c0;
     width: 100%;
-    padding: 2% 1%;
+    padding: 3% 1%;
     font: 200 1rem/1 "MonoSpace";
     outline-color: #147ca0;
     text-align: center;
@@ -139,6 +157,7 @@
  .w1-box2-grid2 label input[type="checkbox"]{
      float: right;
      margin: 0 auto;
+     accent-color: #147ca0;
  }
  
  

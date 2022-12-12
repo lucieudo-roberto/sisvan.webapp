@@ -95,5 +95,17 @@ const page_fc = {
         }
 
         return '';
+    },
+    
+    show_popup : function(text) {
+        let popup_win = this.$q(".popup")[0];
+        popup_win.innerHTML = ""
+        popup_win.innerHTML = `<p class="popup-text">${text}</p>`;
+        popup_win.style.top = "5%";
+        popup_win.style.transition = "0.5s"
+        navigator.vibrate(1000)
+        setTimeout(()=>{
+            popup_win.style.top = "-100px";
+        },2000)
     }
 }
