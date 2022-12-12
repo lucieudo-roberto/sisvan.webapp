@@ -46,13 +46,14 @@
 
 .w1-box1 label input[type="text"] {
     display: block;
-    border: 1px solid #212121;
+    border: 1px solid #c0c0c0;
     width: 100%;
-    padding: 2% 1%;
+    padding: 3% 1%;
     font: 200 1.1rem/1 "MonoSpace";
     outline-color: #147ca0;
     background-color: #fff;
     border-radius: 5px;
+    box-shadow: 0px 2px 3px #cecece;
  }
  
  .w1-box1-grid3 {
@@ -65,15 +66,16 @@
  
  .w1-box1-grid3 label input {
     display: block;
-    border: 1px solid #212121;
+    border: 1px solid #c0c0c0;
     width: 100%;
-    padding: 3% 1%;
+    padding: 4% 1%;
     font: 200 1.1rem/1 "MonoSpace";
     outline-color: #147ca0;
     text-align: center;
     background-color: #fff;
     border-radius: 5px;
     appearance: none;
+    box-shadow: 0px 2px 3px #cecece;
  }
  
  .w1-box1-grid2 {
@@ -96,7 +98,7 @@
  
  .w1-box1 select {
     display: block;
-    border: 1px solid #212121;
+    border: 1px solid #c0c0c0;
     width: 100%;
     padding: 2% 1%;
     font: 200 1.1rem/1 "MonoSpace";
@@ -106,6 +108,7 @@
     background-color: #fff;
     border-radius: 5px;
     appearance: none;
+    box-shadow: 0px 2px 3px #cecece;
  }
  
  .w1-box2-grid2 {
