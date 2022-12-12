@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-
+@font-face {
+    font-family: "MonoSpace";
+    src: url("fonts/font.ttf");
+}
 :root {
     --font-color-actived: #708090;
     --font-size: 16px;
