@@ -12,6 +12,7 @@
     color: #f4f4f4;
     padding: 20% 0;
     text-transform: uppercase;
+    font: 300 .8rem/1 "MonoSpace";
     outline: none;
     width: 100%;
     border-radius: 5px 5px 0 0;
@@ -38,7 +39,7 @@
 
 .w1-box1  label {
     display: block;
-    font: 300 1.1rem/2 "MonoSpace";
+    font: 300 1rem/2 "MonoSpace";
     margin: 1% 0 2% 0;
     width: 100%;
     color: #101010;
@@ -49,7 +50,7 @@
     border: 1px solid #c0c0c0;
     width: 100%;
     padding: 3% 1%;
-    font: 200 1.1rem/1 "MonoSpace";
+    font: 200 1rem/1 "MonoSpace";
     outline-color: #147ca0;
     background-color: #fff;
     border-radius: 5px;
@@ -69,7 +70,7 @@
     border: 1px solid #c0c0c0;
     width: 100%;
     padding: 4% 1%;
-    font: 200 1.1rem/1 "MonoSpace";
+    font: 200 1rem/1 "MonoSpace";
     outline-color: #147ca0;
     text-align: center;
     background-color: #fff;
@@ -87,7 +88,7 @@
 
  .w1-box1-grid2 label {
      display: inline;
-     font: 200 1.1rem/1 "MonoSpace";
+     font: 200 1rem/1 "MonoSpace";
      text-align: center;
      width: 100%;
  }
@@ -101,7 +102,7 @@
     border: 1px solid #c0c0c0;
     width: 100%;
     padding: 2% 1%;
-    font: 200 1.1rem/1 "MonoSpace";
+    font: 200 1rem/1 "MonoSpace";
     outline-color: #147ca0;
     text-align: center;
     margin-top: 5%;
@@ -112,26 +113,32 @@
  }
  
  .w1-box2-grid2 {
+     width: 100%;
      display: grid;
      grid-template-columns: repeat(2,1fr);
      border: none;
      padding: 3% 0;
+     align-items: center;
  }
  
  .w1-box2-grid2 label {
     display: block;
-    font: 200 1.2rem/1 "MonoSpace";
-    margin: 3% 0 3% 3%;
-    width: 90%;
+    font: 200 1rem/1 "MonoSpace";
+    margin: 2% 0;
+    width: 100%;
     color: #212121;
     border-bottom: 1px solid #cecece;
     border-right: 1px solid #cecece;
 
  }
+ .w1-box2-grid2 label:nth-child(even) {
+     width: 90%;
+     margin-left: 10%;
+ }
  
  .w1-box2-grid2 label input[type="checkbox"]{
      float: right;
-     vertical-align: middle;
+     margin: 0 auto;
  }
  
  
@@ -144,10 +151,18 @@
  
  .w1-box3-grid2 button {
      displya: block;
-     width: 45%;
-     padding: 5% 0;
-     margin: 2% auto;
+     width: 55%;
+     padding: 7% 0;
+     margin: 0 auto;
+     border-radius: 5px;
+     background-color: #147ca0;
+     border: 1px solid #147ca0;
+     color: #fff;
+     font: 300 1rem/1 "MonoSpace";
+     box-shadow: 0px 2px 3px #cecece;
  }
+ 
+ 
  
  /* window_2 styles */
  
