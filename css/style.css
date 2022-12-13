@@ -190,32 +190,52 @@
      height: 90vh;
      overflow: auto;
  }
- .w2-box1-card {
-     display: block;
-     width: 97%;
-     margin: 2% auto;
-     padding: 2% 4%;
-     background-color: #fafafa;
-     border-left: 5px solid #147ca0;
- }
- 
- .w2-box1-card-grid2{
-     width: 100%;
-     display: grid;
-     grid-template-columns: 50% 50%;
-     margin-bottom: 3%;
- }
- 
-.w2-box1-card-grid2 i:first-child {
-    color: red;
- }
- .w2-box1-card-grid2 i:last-child {
-    display: block;
-    width: 100%;
-    text-align: right;
-    color: orange;
- }
- 
+
+      .card {
+          display: block;
+          background-color: #fafafa;
+          width: 98%;
+          border: 1px solid #147ca0;
+          border-left: 10px solid #147ca0;
+          box-shadow: 0px 2px 3px #cecece;
+          margin: 3% auto;
+      }
+
+      i {
+          display: block;
+          width: 90%;
+          font: 300 1rem/1 "MonoSpace";
+          font-style: normal;
+          margin: 2% auto;
+      }
+      .i-right {
+          text-align: right;
+          padding: 2% 0;
+          text-decoration: underline;
+      }
+      .i-grid {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          text-align: center;
+          margin: 3% auto;
+      }
+      .button-box {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          width: 100%;
+      }
+      .bb-button {
+          width: 100%;
+          border: none;
+          text-align: center;
+          background-color: #f4f4f4;
+          font: 300 1rem/1 "MonoSpace";
+          padding: 5% 0;
+          border-top: 1px solid #147ca0;
+      }
+      .bb-button:first-child {
+          border-right: 1px solid #147ca0;
+      }
 .w2-box2 {
     display: block;
     position: absolute;
@@ -228,7 +248,4 @@
     box-shadow: 1px 2px 2px #cecece;
     color: #fff;
     filter: opacity(0.4);
-} 
-
-
-
+}
