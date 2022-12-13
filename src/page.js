@@ -52,7 +52,8 @@ const page_fc = {
         
         in_txt.forEach((d)=> d.value = "");
         in_chk.forEach((d)=> d.checked = false);
-        in_chk[0].checked = true;
+        in_txt[5].value = 1;
+        in_chk[0].checked = false;
     },
 
     list_form1 : function (){
@@ -74,18 +75,6 @@ const page_fc = {
                                <button onclick="delete_w1(${x-1})" class="bb-button">excluir</button>
                            </div>
                       </div>`;
-             
-            
-          /*  outstr += `
-            <div class="w2-box1-card">
-                <div class="w2-box1-card-grid2"><i>cadastrado: ${tmp[0]}</i><i> índice: #${x}</i></div>
-                <div class="w2-box1-card-grid"><i>vila: ${tmp[1]}</i><br><i>nome: ${tmp[2]}</i></div>
-                <div class="w2-box1-card-grid2"><i>peso: ${tmp[4]} </i><i>altura: ${tmp[5]}</i></div>
-                <div class"w2-box1-card-bnt-box">
-                    <button onclick="modify_w1(${x-1})"class="w2-box1-card-bnt">editar</button>
-                    <button onclick="delete_w1(${x-1})"class="w2-box1-card-bnt">apagar</button>
-                </div>
-            </div>`; */
         }
         out_window.innerHTML = outstr;
     },
