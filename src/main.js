@@ -4,7 +4,7 @@ var W1_FORM_GLOBAL_ROW_ID = "inserting"
 function clea_form() {
     page_fc.clea_form();
     W1_FORM_GLOBAL_ROW_ID = "inserting";
-    navigator.vibrate(1000)
+   // navigator.vibrate(1000)
     //page_fc.show_popup("formulário limpo");
 }
 
