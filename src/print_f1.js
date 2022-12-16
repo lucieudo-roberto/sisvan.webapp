@@ -51,8 +51,4 @@ window.onload = function(){
     }
 
     window.print();
-
-    window.onafterprint = ()=>{
-      alert("ola")
-    }
 }
