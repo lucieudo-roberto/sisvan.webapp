@@ -80,6 +80,13 @@
     <script src="src/page.js"></script>
     <script src="src/data.js"></script>
     <script src="src/main.js"></script>
+    <script>
+        window.onload = function() {
+            if ( visualViewport.width > 600 ) {
+                document.body.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
 

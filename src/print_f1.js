@@ -10,7 +10,7 @@ window.onload = function(){
     let rows_len = data_fc._data.length; // calculate max rows 
     
     let pages = 0;           // pages number
-    let page_limit = 34      // rows per page
+    let page_limit = 38      // rows per page
     let page_limit_count = 0 // rows counts,;; dont change this value
 
     page.innerHTML += header;
@@ -19,8 +19,15 @@ window.onload = function(){
     
  
     for (let x=0; x<rows_len; x++) {
-          let t = data_fc._data[x].split("|");
-          body[pages].innerHTML += `
+        
+        if ( page_limit_count == page_limit ) {
+            pages += 1;
+            page.innerHTML += header; page_limit_count = 0;
+            body = document.querySelectorAll(".t-body"); 
+        }
+        let t = data_fc._data[x].split("|");
+        
+        body[pages].innerHTML += `
                     <i class='row'>
                     	  <i class='txt'>${t[0]}</i>
                         <i class='txt'>${t[1]}</i><i class='txt'>${t[2]}</i>
@@ -41,14 +48,11 @@ window.onload = function(){
                         <i class='txt'>${t[8]}</i><i class='txt'>${t[9]}</i>
                     </i>`
         page_limit_count +=1;
-      
-        if ( page_limit_count == page_limit ) {
-          pages += 1;
-          // page.innerHTML += "<br>"
-          page.innerHTML += header; page_limit_count = 0;
-          body = document.querySelectorAll(".t-body"); 
-        }
     }
 
     window.print();
+
+    window.onafterprint = function() {
+      console.log("Ola, mundo")
+    } 
 }
