@@ -10,7 +10,7 @@ window.onload = function(){
     let rows_len = data_fc._data.length; // calculate max rows 
     
     let pages = 0;           // pages number
-    let page_limit = 38      // rows per page
+    let page_limit = 34      // rows per page
     let page_limit_count = 0 // rows counts,;; dont change this value
 
     page.innerHTML += header;
@@ -44,7 +44,7 @@ window.onload = function(){
       
         if ( page_limit_count == page_limit ) {
           pages += 1;
-          page.innerHTML += "<br>"
+          // page.innerHTML += "<br>"
           page.innerHTML += header; page_limit_count = 0;
           body = document.querySelectorAll(".t-body"); 
         }
