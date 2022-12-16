@@ -5,7 +5,7 @@ let header = '<br><h1>Planilha do SISVAN vitamina A,Sulfato e AIDPI comunitário
 
 window.onload = function(){
 
-	let page = document.getElementById("t-page") // whole page to set data to print
+	  let page = document.getElementById("t-page") // whole page to set data to print
     data_fc.open()  // open data base ( copy from localStorage to array in data_fc)
     let rows_len = data_fc._data.length; // calculate max rows 
     
@@ -50,9 +50,5 @@ window.onload = function(){
         page_limit_count +=1;
     }
 
-    window.print();
-
-    window.onafterprint = function() {
-      console.log("Ola, mundo")
-    } 
+    window.print(); 
 }
