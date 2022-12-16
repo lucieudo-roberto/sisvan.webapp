@@ -16,7 +16,7 @@
     src: url("fonts/font.ttf");
 }
 
-/*@media print {*/
+@media print {
 
     html, body{ /*210,397*/
         width: 100%;
@@ -26,7 +26,7 @@
     }
 
     #t-page {
-       display: block;
+       display: block !important;
        width: 100%;
        height: 100%;
     }
@@ -35,7 +35,6 @@
         width: 100%;
         font: 300 16px/1 Helvetica;
         text-align: center;
-        margin-top: 2%;
     }
 
     h2,h3 {
@@ -127,7 +126,7 @@
     }
     .age-txt:first-child { border-right: 1px solid #000;}
     
-    #t-body {
+    .t-body {
         margin: auto auto;
         width: 98%;
         overflow: hidden;
@@ -152,10 +151,12 @@
 
     .txt:last-child{ border-right: none;}
 
-/*   }*/
+}
 
 /* mobile chrome fix margins */
 @page {
     margin-right: 1px;
     margin-left: 1px; 
 }
+
+#t-page { display: none; }
