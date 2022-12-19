@@ -13,7 +13,7 @@ const page_fc = {
         
         scrs.forEach((wind)=>{wind.style.display="none"})
         scrs[tabID].style.display = "block";
-        tabs[tabID].style.backgroundColor = "#f4f4f4";
+        tabs[tabID].style.backgroundColor = "#F1F2F6";
         tabs[tabID].style.color= "#708090";
         
         try {callback()} catch{return;}
